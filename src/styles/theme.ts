@@ -16,54 +16,55 @@ export const mosaicTheme = {
     // Палитра
     colors: {
         primary: {
-            100: '#88c070',
-            500: '#306850',
-            600: '#1e4f3a',
-            700: '#0c3520'
+            100: '#7fa36b',
+            500: '#244739',
+            600: '#1b352b',
+            700: '#12241d',
         },
 
         gray: {
-            100: '#e0f8d0',
-            300: '#8bac0f',
-            500: '#5d6d00',
-            700: '#2c3c00',
-            900: '#0f1f00',
+            100: '#d7e4c0',
+            300: '#7b8a52',
+            500: '#556136',
+            700: '#394223',
+            900: '#1c2412',
         },
 
         accent: {
-            500: 'rgba(255, 255, 255, 0.9)',
-            600: 'rgba(255, 255, 255, 0.7)',
+            500: '#cfdc8c',
+            600: '#a5b35c',
         },
 
         feedback: {
-            success: '#88c070',
-            warning: '#d8b256',
-            danger: '#c85d4a',
-            info: '#6fa8dc',
+            success: '#7fa36b',
+            warning: '#c4a747',
+            danger: '#b85a4b',
+            info: '#5d8aa8',
         },
 
-        white: '#ffffff',
+        white: '#f4f7ee',
+
         black: '#081820',
     },
 
     shadows: {
         sm: '2px 2px 0 rgba(0,0,0,0.15)',
-        md: '4px 4px 0 rgba(0,0,0,0.2)',
-        lg: '6px 6px 0 rgba(0,0,0,0.25)',
+        md: '3px 3px 0 rgba(0,0,0,0.18)',
+        lg: '5px 5px 0 rgba(0,0,0,0.22)',
 
         primary: {
-            md: '4px 4px 0 #183828',
-            lg: '6px 6px 0 #183828',
+            md: '3px 3px 0 #10211c',
+            lg: '5px 5px 0 #10211c',
         },
 
         secondary: {
-            md: '4px 4px 0 #556600',
-            lg: '6px 6px 0 #556600',
+            md: '3px 3px 0 #3e4724',
+            lg: '5px 5px 0 #3e4724',
         },
 
         accent: {
-            md: '4px 4px 0 #9a9a9a',
-            lg: '6px 6px 0 #9a9a9a',
+            md: '3px 3px 0 #8c9657',
+            lg: '5px 5px 0 #8c9657',
         },
 
         focus: '0 0 0 2px rgba(136,192,112,0.4)',
@@ -107,11 +108,11 @@ export const mosaicTheme = {
 
     surfaces: {
 
-        base: '#102820',
+        base: '#0b1c18',
 
-        elevated: '#183828',
+        elevated: '#132923',
 
-        overlay: '#224838',
+        overlay: '#1b352d',
 
         pixelTexture: `
       linear-gradient(

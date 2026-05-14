@@ -56,4 +56,6 @@
 
 .input::placeholder {
   opacity: 0.7;
+
+  color: currentColor;
 }

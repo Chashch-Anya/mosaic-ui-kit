@@ -56,21 +56,21 @@ export const Card: React.FC<CardProps> & {
 
         const variantMap = {
             primary: {
-                bg: theme.colors.primary[500],
+                bg: theme.surfaces.overlay,
                 color: theme.colors.white,
-                border: theme.colors.black,
+                border: theme.colors.primary[100],
             },
 
             secondary: {
-                bg: theme.colors.gray[300],
+                bg: theme.surfaces.elevated,
                 color: theme.colors.white,
-                border:  theme.colors.gray[700],
+                border: theme.colors.gray[500],
             },
 
             accent: {
-                bg: theme.colors.accent[500],
+                bg: theme.colors.accent[600],
                 color: theme.colors.black,
-                border: theme.colors.accent[500],
+                border: theme.colors.primary[700]
             }
         }
 
@@ -82,7 +82,7 @@ export const Card: React.FC<CardProps> & {
             '--card-color': currentVariant.color,
 
             '--card-border': currentVariant.border,
-            
+
             '--card-padding': currentPadding,
 
             '--card-shadow': theme.shadows.md,

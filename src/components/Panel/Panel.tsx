@@ -20,7 +20,7 @@ export const Panel: React.FC<PanelProps> = ({
     const panelStyle = {
         '--panel-bg': theme.surfaces.elevated,
 
-        '--panel-border': theme.colors.primary[600],
+        '--panel-border': theme.colors.primary[700],
 
         '--panel-shadow': theme.shadows.md,
 
@@ -28,7 +28,7 @@ export const Panel: React.FC<PanelProps> = ({
 
         '--panel-padding': theme.spacing.lg,
 
-        '--panel-title-color': theme.colors.primary[100],
+        '--panel-title-color': theme.colors.white,
 
         '--panel-font-family': theme.typography.fonts.body,
 

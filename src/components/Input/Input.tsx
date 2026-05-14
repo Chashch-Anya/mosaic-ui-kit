@@ -43,21 +43,21 @@ export const Input: React.FC<InputProps> = ({
 
     const variantMap = {
         primary: {
-            background: theme.colors.primary[500],
+            background: theme.surfaces.base,
             color: theme.colors.white,
-            border: theme.colors.black,
+            border: theme.colors.primary[700],
         },
 
         secondary: {
-            background: theme.colors.gray[100],
-            color: theme.colors.black,
+            background: theme.surfaces.elevated,
+            color: theme.colors.white,
             border: theme.colors.gray[700],
         },
 
         accent: {
-            background: theme.colors.accent[500],
+            background: theme.colors.accent[600],
             color: theme.colors.black,
-            border: theme.colors.gray[700],
+            border: theme.colors.gray[500],
         },
     };
 

@@ -3,7 +3,10 @@ import './Tabs.css';
 import { useTheme } from '../../styles/useTheme';
 
 export interface TabsProps {
-    items: string[];
+    items: {
+        label: string;
+        value: string;
+    }[]
 
     value: string;
 
@@ -12,6 +15,8 @@ export interface TabsProps {
     onChange?: (value: string) => void;
 
     className?: string;
+
+    fullWidth?: boolean;
 }
 
 export const Tabs: React.FC<TabsProps> = ({
@@ -24,6 +29,9 @@ export const Tabs: React.FC<TabsProps> = ({
     onChange,
 
     className = '',
+
+    fullWidth = false,
+
 }) => {
     const theme = useTheme();
     const variantMap = {
@@ -71,26 +79,30 @@ export const Tabs: React.FC<TabsProps> = ({
 
         '--mosaic-surface-size': theme.surfaces.pixelTextureSize,
 
+        display: 'flex',
+
+        width: fullWidth ? '100%' : 'fit-content',
+
     } as React.CSSProperties;
 
     return (
         <div style={tabsStyle}
             className={`tabs ${className}`}>
             {items.map((item) => {
-                const isActive =
-                    item === value;
+                const isActive = item.value === value;
 
                 return (
                     <button
-                        key={item}
+                        key={item.value}
+                        onClick={() => onChange?.(item.value)}
                         type="button"
                         className={`
                             tabs__item
                             ${isActive ? 'tabs__item--active' : ''}
                         `}
-                        onClick={() => onChange?.(item)}
+                        style={{flex: fullWidth ? 1 : undefined,}}
                     >
-                        {item}
+                        {item.label}
                     </button>
                 );
             })}

@@ -26,8 +26,7 @@ type Story = StoryObj<typeof Tabs>;
 
 export const Default: Story = {
     render: () => {
-        const [value, setValue] =
-            useState('Tasks');
+        const [value, setValue] = useState('Tasks');
 
         return (
             <Tabs
@@ -45,8 +44,7 @@ export const Default: Story = {
 
 export const Primary: Story = {
     render: () => {
-        const [value, setValue] =
-            useState('Tasks');
+        const [value, setValue] = useState('Tasks');
 
         return (
             <Tabs
